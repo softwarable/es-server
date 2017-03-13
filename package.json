@@ -1,0 +1,28 @@
+{
+  "name": "es-compose",
+  "version": "1.0.0",
+  "description": "Web Development framework using Node + Express + Vue)\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C\u001b[C\u001b[C(N\u001b[2~o\u001b[2~dd\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D(Node + Express + Vue)JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\u0016\u0016https://github.com/softwarable/es-compose"
+  },
+  "keywords": [
+    "Node",
+    "Express",
+    "Vue",
+    "MVC",
+    "Controller",
+    "VueJS",
+    "NodeJS"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2",
+    "lodash": "^4.17.4"
+  }
+}

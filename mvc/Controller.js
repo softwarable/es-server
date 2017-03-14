@@ -4,6 +4,9 @@ let View = require('./View');
 
 /**
  * Restful Action Controller for Node +/ Express applications
+ * 
+ * Encapsulates all related restful actions in one single class
+ * Also provides controller lifecycle for breaking codes into logical units
  */
 class Controller
 {
@@ -42,6 +45,9 @@ class Controller
         this.emitter = new Emitter(response);
 
         try {
+            // call initialize event method
+            this.onInit();
+
             if(!this.resolver) {
                throw new ResolverError("Action resolver is not found.");
             }
@@ -75,14 +81,38 @@ class Controller
         }
         
         catch(e) {
-            if(next) {
-                next(e, request, response);
-            } else {
-                throw e;
-                // response.end(e.toString()); // error handler should pick it it.
-            }
+            this.onError(e);
+        }
+
+        // finally call the exit method
+        this.onExit();
+    }
+
+    /**
+     * Controller initialization method
+     * This event is called before dispatching action to handler
+     */
+    onInit() {}
+
+    /**
+     * Controller level error/exception handler
+     * @param {*} error 
+     */
+    onError(error) {
+        let next = this.next || null;
+        if(next) {
+            next(e, request, response);
+        } else {
+            throw e;
         }
     }
+
+    /**
+     * Controller exit method
+     * 
+     * This method is called after action handler has been executed
+     */
+    onExit() {}
 }
 
 module.exports = Controller;

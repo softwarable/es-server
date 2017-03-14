@@ -1,14 +1,13 @@
 
 /**
  * Emits response back to the browser
- * 
+ * If express presence (check for express features), it will use it,
  */
 class Emitter {
     /**
      * 
      * @param {*} response 
-     * @param {*} renderer 
-     */
+\     */
     constructor(response)
     {
         this.response = response;
@@ -75,7 +74,6 @@ class Emitter {
             return response.send(data);
         }
 
-        console.log('Here with result', data, typeof data);
         switch(typeof data) {
             case 'object':
                 response.writeHead(status, {'Content-Type' : 'application/json'});            

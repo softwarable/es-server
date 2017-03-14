@@ -1,5 +1,5 @@
 {
-  "name": "es-compose",
+  "name": "es-framework",
   "version": "1.0.0",
   "description": "A Web Development framework using NodeJS + ExpressJS",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/softwarable/es-compose"
+    "url": "https://github.com/allied-technical-sales/es-framework"
   },
   "keywords": [
     "Node",

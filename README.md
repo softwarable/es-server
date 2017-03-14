@@ -1,2 +1,2 @@
-# ES-Compose Web Framework
-A simple, modern and flexible Web framework for Node + Express
+# ES-Framework
+A simple  JavaScript (EcmaScript 6+) framework for backend and front-end web development.  Built on top of NodeJS + ExpressJS + VueJS.

@@ -101,9 +101,9 @@ class Controller
     onError(error) {
         let next = this.next || null;
         if(next) {
-            next(e, request, response);
+            next(error, request, response);
         } else {
-            throw e;
+            throw error;
         }
     }
 

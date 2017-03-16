@@ -7,7 +7,7 @@ class Emitter {
     /**
      * 
      * @param {*} response 
-\     */
+     */
     constructor(response)
     {
         this.response = response;
@@ -27,7 +27,7 @@ class Emitter {
         response.renderer(script, data);
     }
 
-        /**
+    /**
      * 
      * @param {*} html 
      * @param {*} data 

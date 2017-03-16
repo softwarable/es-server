@@ -1,5 +1,5 @@
 {
-  "name": "ats",
+  "name": "ats-server",
   "version": "1.0.0",
   "description": "A Web Development framework using NodeJS + ExpressJS",
   "main": "index.js",

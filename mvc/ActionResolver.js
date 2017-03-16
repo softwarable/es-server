@@ -36,6 +36,7 @@ class ActionResolver
         // first attempt, check if generic restful methods are available
         // ie, doGet, doPost, etc.
         let handler = this.generateHandlerName(verb);
+        
         console.log(`Generated action name: ${handler}`, verb, params);
 
         if(target[handler]) {  

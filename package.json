@@ -1,6 +1,6 @@
 {
-  "name": "ats-server",
-  "version": "1.0.0",
+  "name": "es-server",
+  "version": "1.0.1",
   "description": "A Web Development framework using NodeJS + ExpressJS",
   "main": "index.js",
   "scripts": {
